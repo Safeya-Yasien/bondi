@@ -1,0 +1,21 @@
+.register-form {
+  border: 1px solid var(--main-color);
+  padding: 10px;
+}
+
+.error-text {
+  color: #f44336;
+}
+
+#pass-toggle {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}

@@ -22,8 +22,117 @@
     <title>Black Developer</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="imgs/light-logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a href="login.html" class="login main-btn btn rounded-pill d-block">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <h1 class="">Awsome</h1>
+        <p>Creative responsive site</p>
+        <a href="#" class="get-started main-btn btn rounded-pill d-block"
+          >Get Started</a
+        >
+      </div>
+    </div>
+
+    <div class="features pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="main-title mt-4 mb-4 position-relative">
+          <i class="fa-brands fa-bootstrap bootstrap mb-4"></i>
+          <h2 class="text-capitalize">we are good at</h2>
+          <p>some features list</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-1 position-absolute number"></i>
+                <i class="fa-brands fa-css3-alt position-absolute icon"></i>
+              </div>
+              <h4>Structure organization</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                ullam magnam officiis qui a voluptate error. Ipsum libero fuga
+                aperiam iure, deserunt repellat, cum optio odit quidem veritatis
+                ducimus quaerat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-2 position-absolute number"></i>
+                <i class="fa-brands fa-js position-absolute icon"></i>
+              </div>
+              <h4>Interactive Site</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                ullam magnam officiis qui a voluptate error. Ipsum libero fuga
+                aperiam iure, deserunt repellat, cum optio odit quidem veritatis
+                ducimus quaerat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-3 position-absolute number"></i>
+                <i class="fa-brands fa-react position-absolute icon"></i>
+              </div>
+              <h4>FrameWork</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                ullam magnam officiis qui a voluptate error. Ipsum libero fuga
+                aperiam iure, deserunt repellat, cum optio odit quidem veritatis
+                ducimus quaerat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
