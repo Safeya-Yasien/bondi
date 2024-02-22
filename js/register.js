@@ -1,11 +1,11 @@
 const inputFullName = document.querySelector("#input-full-name"),
   inputEmail = document.querySelector("#input-email"),
   inputPassword = document.querySelector("#input-password"),
-  passwordToggleBtn = document.querySelector("#pass-toggle");
-(inputRepeatedPassword = document.querySelector("#input-repeated-password")),
-  (loginButton = document.querySelector(".register-btn"));
+  passwordToggleBtn = document.querySelector("#pass-toggle"),
+  inputRepeatedPassword = document.querySelector("#input-repeated-password"),
+  registerButton = document.querySelector(".register-btn");
 
-loginButton.addEventListener("click", register);
+registerButton.addEventListener("click", register);
 
 function register(event) {
   event.preventDefault();
@@ -76,7 +76,7 @@ function removeError(ele) {
 }
 
 function redirectToLoginPage() {
-  window.location.href = "../login.html";
+  window.location.href = "./login.html";
 }
 
 passwordToggleBtn.addEventListener("click", () => {

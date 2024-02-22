@@ -1,46 +1,76 @@
-// //
-// //
-// // link of home page
-// //
-// //
-// //
+const inputEmail = document.querySelector("#input-email"),
+  inputPassword = document.querySelector("#input-password"),
+  passwordToggleBtn = document.querySelector("#pass-toggle"),
+  invalidDataContainer = document.querySelector(".login-form .invalid-data"),
+  loginButton = document.querySelector(".login-btn");
 
-// let inputEmail = document.querySelector(".input-email");
-// let inputPassword = document.querySelector(".input-password");
-// let loginButton = document.querySelector(".login-btn");
+loginButton.addEventListener("click", login);
 
-// loginButton.addEventListener("click", login);
+function login(event) {
+  event.preventDefault();
 
-// function login(event) {
-//   event.preventDefault();
+  let email = inputEmail.value.trim();
+  let password = inputPassword.value.trim();
 
-//   let validInputEmail = inputEmail.value.trim();
-//   let validInputPassword = inputPassword.value.trim();
+  removeError();
 
-//   if (checkEmpty(validInputEmail, validInputPassword)) {
-//     if (checkEmail(validInputEmail)) {
-//       addUserInfoToLocalStorage();
-//     }
-//   }
-// }
+  if (email === "") {
+    showError(inputEmail, "Enter a valid email address");
+  }
+  if (password === "") {
+    showError(inputPassword, "Enter your password");
+  }
 
-// function checkEmpty(validInputEmail, validInputPassword) {
-//   if (validInputEmail !== "" && validInputPassword !== "") return true;
-//   else return false;
-// }
+  getDataUserFromLocalStorage(email, password);
+}
 
-// function checkEmail(validInputEmail) {
-//   if (validInputEmail.includes("a")) return true;
-//   else return false;
-// }
+function getDataUserFromLocalStorage(email, password) {
+  const dataUser = JSON.parse(localStorage.getItem("userData"));
 
-// function addUserInfoToLocalStorage(validInputEmail, validInputPassword) {
-//   localStorage.setItem("email", validInputEmail);
-//   localStorage.setItem("password", validInputPassword);
+  if (dataUser !== null) {
+    if (email === dataUser.email && password === dataUser.password) {
+      setInterval(redirectToHomePage, 1000);
+    } else {
+      if (email !== "" && password !== "")
+        invalidData("Email or password is wrong");
+    }
+  }
+}
 
-//   setInterval(redirectToHomePage(), 2000);
-// }
+function showError(field, errorMessage) {
+  field.classList.add("error");
 
-// function redirectToHomePage() {
-//   window.location.href = "";
-// }
+  const errorElement = document.createElement("small");
+  errorElement.classList.add("error-text");
+  errorElement.innerHTML = errorMessage;
+
+  const parentElement = field.parentElement;
+
+  parentElement.appendChild(errorElement);
+}
+
+function removeError(ele) {
+  document
+    .querySelectorAll(".login-form .error")
+    .forEach((field) => field.classList.remove("error"));
+  document
+    .querySelectorAll(".error-text")
+    .forEach((errorText) => errorText.remove("error"));
+}
+
+function invalidData(message) {
+  invalidDataContainer.innerHTML = message;
+}
+
+function redirectToHomePage() {
+  window.location.href = "./index.html";
+}
+
+passwordToggleBtn.addEventListener("click", () => {
+  const type =
+    inputPassword.getAttribute("type") === "password" ? "text" : "password";
+
+  inputPassword.setAttribute("type", type);
+
+  passwordToggleBtn.classList.toggle("fa-eye");
+});

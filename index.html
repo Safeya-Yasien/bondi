@@ -41,10 +41,12 @@
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" >About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Portfolio</a>
@@ -56,7 +58,7 @@
           <div class="search ps-3 pe-3 d-none d-lg-block">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <a href="login.html" class="login main-btn btn rounded-pill d-block">Login</a>
+          <a href="" class="profile main-btn btn rounded-pill d-block"></a>
         </div>
       </div>
     </nav>
@@ -65,7 +67,11 @@
       <div class="text-center">
         <h1 class="">Awsome</h1>
         <p>Creative responsive site</p>
-        <a href="#" class="get-started main-btn btn rounded-pill d-block"
+        <a
+          href="#"
+          onclick="getRepos()"
+          id="get-start"
+          class="get-started main-btn btn rounded-pill d-block"
           >Get Started</a
         >
       </div>
@@ -124,6 +130,140 @@
                 aperiam iure, deserunt repellat, cum optio odit quidem veritatis
                 ducimus quaerat.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="main-title mt-4 mb-4 position-relative">
+          <i class="fa-brands fa-bootstrap bootstrap mb-4"></i>
+          <h2 class="text-capitalize">we are good at</h2>
+          <p>some projects list</p>
+        </div>
+
+        <div class="row" id="repo-row">
+          <div class="col-md-4">
+            <div class="repo">
+              <img src="imgs/portfolio-1.jpg" alt="portfolio-1" />
+              <div class="repo-info text-center">
+                <h4>CRUDS</h4>
+                <p>Create Read Update Delete Search</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="repo">
+              <img src="imgs/portfolio-2.jpg" alt="portfolio-2" />
+              <div class="repo-info text-center">
+                <h4>CRUDS</h4>
+                <p>Create Read Update Delete Search</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="repo">
+              <img src="imgs/portfolio-3.jpg" alt="portfolio-3" />
+              <div class="repo-info text-center">
+                <h4>CRUDS</h4>
+                <p>Create Read Update Delete Search</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info">
+              <img src="imgs/light-logo.png" alt="light-logo" />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt voluptatem amet quas voluptatibus nulla maxime
+                molestias corrupti porro similique consequatur quia, assumenda
+                delectus. Aspernatur hic a asperiores voluptate quas similique.
+              </p>
+              <div class="copyright">
+                Created By
+                <span
+                  ><a href="https://github.com/Safeya-Yasien"
+                    >Safeya Yasien</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="links">
+              <h5>Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="links text-left">
+              <h5>Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="contact links">
+              <h5>Contact</h5>
+              <p>
+                Get in touch with us via mail phone.We are waiting for your call
+                or message
+              </p>
+              <ul
+                class="d-flex mt-2 list-unstyled gap-3 justify-content-center"
+              >
+                <li>
+                  <a class="d-block" href="#"
+                    ><i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block" href="#"
+                    ><i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="d-block" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="d-block" href="#"
+                    ><i
+                      class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

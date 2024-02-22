@@ -1,0 +1,90 @@
+.card {
+  background-color: var(--black-color);
+}
+
+.card #username {
+  color: var(--heading-color);
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+}
+
+.job {
+  color: var(--text-color);
+}
+
+.social-links button {
+  border-color: var(--text-color);
+}
+
+.social-links button a {
+  color: var(--black-color);
+}
+
+.social-links button:hover {
+  background-color: var(--text-color);
+  border-color: var(--white-color);
+}
+
+.projects-info div p:first-child {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.projects-info div p:last-child {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.popup-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+}
+
+.popup-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  padding: 20px;
+  background-color: var(--text-color);
+  border: 1px solid var(--white-color);
+  width: 400px;
+}
+
+.close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: var(--black-color);
+  font-weight: bold;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-link {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+.submit-button {
+  outline: none;
+  border: none;
+  margin: 15px auto 0;
+  display: block;
+  padding: 5px 15px;
+}

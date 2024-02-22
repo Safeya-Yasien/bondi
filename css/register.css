@@ -1,3 +1,9 @@
+
+.navbar-collapse{
+  flex-basis: auto;
+}
+
+
 .register-form {
   border: 1px solid var(--main-color);
   padding: 10px;
@@ -6,6 +12,8 @@
 .error-text {
   color: #f44336;
 }
+
+
 
 #pass-toggle {
   position: absolute;
